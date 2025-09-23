@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* section padding */
+.section-p {
+  padding: 1.5rem 1rem;
+  margin-top: 1rem;
+}
+
+/*============== nav-section styling =============== */
+nav {
+  top: 0;
+  position: sticky;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+.nav-link:hover {
+  content: "";
+}
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 50%;
+  right: 0;
+}
+.navbar-brand,
+.bi-shop {
+  cursor: default;
+}
+.nav-icons i {
+  cursor: pointer;
+}
+/*============ Change background header ===================*/
+.scroll-header {
+  background-color: aliceblue;
+  box-shadow: 0 1px 4px rgb(135, 164, 189);
+}
+/*====================== hero section ======================*/
+.swiper-pagination {
+  position: initial;
+  margin-top: 2rem;
+}
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background: black;
+  opacity: 1;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0.5rem;
+}
+.swiper-pagination-bullet-active {
+  width: 1.5rem;
+  height: 5px;
+  border-radius: 5rem;
+}
+
+/*===================== discount section ======================= */
+
+#discount .container {
+  margin: 30px auto;
+  width: 80%;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(244, 237, 237);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+/* ===========new arrival================= */
+
+#arrival .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#arrival .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#arrival .row img {
+  width: 150px;
+  height: 150px;
+  transition: 0.3s ease;
+  margin: 3rem auto;
+}
+#arrival .col-md-2 {
+  width: 310px;
+  padding: 2rem 0;
+  border-radius: 2rem;
+  border: 1px solid rgb(244, 237, 237);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+#arrival p {
+  margin-top: 0;
+}
+#arrival .new-price {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  font-weight: bold;
+}
+#arrival .discount-price {
+  text-decoration: line-through;
+  color: red;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#arrival a {
+  position: absolute;
+  border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
+  display: inline-flex;
+  bottom: 0;
+  right: -0.3rem;
+}
+#arrival .col-md-2:hover img {
+  transform: translateY(0.75rem);
+}
+#arrival .col-md-2:hover a {
+  right: 0;
+}
+#arrival .new {
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+#arrival .row h3 {
+  font-size: 15px;
+  text-wrap: nowrap;
+  margin-bottom: 0;
+}
