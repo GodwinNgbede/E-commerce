@@ -193,3 +193,7 @@ nav {
   transform: translateY(-50%);
   padding: 10px 15px;
 }
+/* ================= FOOTER ============= */
+footer a {
+  text-decoration: none;
+}
