@@ -80,78 +80,11 @@ nav {
 }
 /* ===========new arrival================= */
 
-/* #arrival .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#arrival .row {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-#arrival .row img {
-  width: 150px;
-  height: 150px;
-  transition: 0.3s ease;
-  margin: 3rem auto;
-}
-#arrival .col-md-2 {
-  width: 310px;
-  padding: 2rem 0;
-  border-radius: 2rem;
-  border: 1px solid rgb(244, 237, 237);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-#arrival p {
-  margin-top: 0;
-}
-#arrival .new-price {
-  display: inline-flex;
-  align-items: center;
-  column-gap: 0.25rem;
-  font-weight: bold;
-}
-#arrival .discount-price {
-  text-decoration: line-through;
-  color: red;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-#arrival a {
-  position: absolute;
-  border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
-  display: inline-flex;
-  bottom: 0;
-  right: -0.3rem;
-}
-#arrival .col-md-2:hover img {
-  transform: translateY(0.75rem);
-}
-#arrival .col-md-2:hover a {
-  right: 0;
-}
-#arrival .new {
-  font-size: 12px;
-  position: absolute;
-  top: 10px;
-  left: 5px;
-}
-#arrival .row h3 {
-  font-size: 15px;
-  text-wrap: nowrap;
-  margin-bottom: 0;
-} */
 #arrival h1 {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
+  margin-bottom: 2.5rem;
 }
 #arrival img {
   width: 150px;
@@ -210,4 +143,53 @@ nav {
 }
 #arrival .new-content:hover a {
   right: 0;
+}
+/* ============= STEPS ============== */
+#step .container {
+  background: rgb(253, 253, 250);
+  border-radius: 10px;
+  padding: 3.5rem 2.5rem;
+}
+.step-row {
+  margin: 2rem 4rem;
+  padding: 10px 0;
+  /* flex-wrap: nowrap; */
+}
+.step-col {
+  background: rgb(235, 245, 248);
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.step-col:hover .step-num {
+  transform: translateY(-0.5rem);
+}
+.step-num {
+  margin: 2rem 0;
+}
+/* ============steps section========== */
+.email-container {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+}
+
+.email-container input {
+  width: 100%;
+  padding: 2rem 5rem 2rem 1.5rem;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+  background: rgb(253, 253, 250);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.email-container button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  padding: 10px 15px;
 }
