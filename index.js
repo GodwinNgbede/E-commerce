@@ -1,3 +1,35 @@
+const navIcons = document.getElementById("nav-icons");
+const loginIcon = document.getElementById("login-icon");
+const loginEl = document.getElementById("login");
+const loginClose = document.getElementById("login-close");
+const cartIcon = document.getElementById("cart-icon");
+const cartEl = document.getElementById("cart");
+const cartClose = document.getElementById("cart-close");
+
+// ================T=O SHOW & HIDE LOGIN===================
+if (loginIcon) {
+  loginIcon.addEventListener("click", () => {
+    loginEl.classList.add("show-login");
+  });
+}
+if (loginEl) {
+  loginClose.addEventListener("click", () => {
+    loginEl.classList.remove("show-login");
+  });
+}
+
+// =========== TO SHOW $ HIDE CART============
+if (cartIcon) {
+  cartIcon.addEventListener("click", () => {
+    cartEl.classList.add("show-cart");
+  });
+}
+if (cartEl) {
+  cartClose.addEventListener("click", () => {
+    cartEl.classList.remove("show-cart");
+  });
+}
+
 // To change background header
 function scrollHeader() {
   const navEl = document.querySelector(".navbar-expand-sm");
@@ -8,6 +40,7 @@ function scrollHeader() {
   }
   window.addEventListener("scroll", scrollHeader);
 }
+
 // HOME SWIPER INITIALIZER FN
 var homeSwiper = new Swiper(".home-swiper", {
   spaceBetween: 30,

@@ -42,6 +42,154 @@ nav {
 .nav-icons i {
   cursor: pointer;
 }
+
+/* ================= CART ==================== */
+#cart {
+  width: 420px;
+  position: fixed;
+  background: rgb(253, 253, 250);
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  height: 100%;
+  padding: 3.5rem 2.5rem;
+  top: 0;
+  right: -100%;
+  transition: 0.3s ease;
+}
+#cart .bi-x {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.cart-title-center {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.cart-card {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 3rem;
+}
+
+.cart-img img {
+  width: 100px;
+  height: 100px;
+}
+.cart-content h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+.cart-img-price {
+  color: red;
+  display: inline-flex;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.cart-amount,
+.cart-amount-content {
+  display: flex;
+  align-items: center;
+}
+.cart-amount {
+  column-gap: 3rem;
+}
+.cart-amount-content {
+  gap: 15px;
+}
+.cart-amount-box {
+  background-color: rgb(244, 237, 237);
+  cursor: pointer;
+}
+.bi-trash3 {
+  color: red;
+  cursor: pointer;
+}
+.cart-item-prices {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-item-total {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* ============== SHOW CART=============== */
+#cart.show-cart {
+  right: 0;
+}
+
+/* ================= LOGIN =================== */
+#login {
+  width: 420px;
+  position: fixed;
+  background: rgb(253, 253, 250);
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  height: 100%;
+  padding: 3.5rem 2.5rem;
+  top: 0;
+  right: -100%;
+  transition: 0.3s ease-in-out;
+}
+
+#login .bi-x {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.login-title-center {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.login-content {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 3rem;
+}
+.login-content label {
+  position: absolute;
+  padding: 0.7rem;
+  font-weight: 500;
+}
+.login-content input {
+  width: 100%;
+  padding: 1.7rem;
+  outline: none;
+  border: none;
+  background-color: rgb(244, 237, 237);
+  border-radius: 16px;
+  margin: 0.25rem 0.5rem 0.5rem 0;
+}
+.login-btn {
+  background-color: rgb(226, 9, 9);
+  color: white;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.login-btn:hover {
+  opacity: 0.7;
+}
+.sign-up-text {
+  font-weight: 400;
+  margin-top: 1rem;
+}
+.sign-up-text a {
+  color: red;
+  font-weight: 500;
+}
+/* ============== SHOW LOGIN ============== */
+#login.show-login {
+  right: 0;
+}
+
 /*============ Change background header ===================*/
 .scroll-header {
   background-color: aliceblue;
@@ -193,7 +341,34 @@ nav {
   transform: translateY(-50%);
   padding: 10px 15px;
 }
-/* ================= FOOTER ============= */
+/* ================= FOOTER ==================== */
 footer a {
   text-decoration: none;
+}
+/* ================= SCROLL UP =============== */
+.scroll-up {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  display: inline-flex;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.scroll-up:hover {
+  opacity: 1;
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
+
+/* ============== This is the side scrollbar in browsers ================ */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: hsl(250, 12%, 90%);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(250, 12%, 80%);
+  border-radius: 0.5rem;
 }

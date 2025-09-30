@@ -59,14 +59,102 @@
             </li>
           </ul>
         </div>
-        <div class="nav-icons">
-          <i class="bi bi-person fs-5 me-2"></i>
-          <i class="bi bi-bag fs-5"></i>
+        <div class="nav-icons" id="nav-icons">
+          <i class="bi bi-person fs-5 me-2" id="login-icon"></i>
+          <i class="bi bi-bag cart-icon fs-5" id="cart-icon"></i>
         </div>
       </div>
     </nav>
 
-    <!--================= hero section============== -->
+    <!-- ================== CART SECTION============= -->
+    <div id="cart" class="cart">
+      <i class="bi bi-x" id="cart-close"></i>
+      <h2 class="cart-title-center">My cart</h2>
+      <div class="cart-container-content">
+        <!-- cart item 1 -->
+        <article class="cart-card">
+          <div class="cart-img">
+            <img src="./photos/cart img 1.jpeg" alt="#" />
+          </div>
+          <div class="cart-content">
+            <h3 class="cart-img-title">Wedding Gown</h3>
+            <span class="cart-img-price">$14</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box"><i class="bi bi-dash"></i></span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box"><i class="bi bi-plus"></i></span>
+              </div>
+              <i class="bi bi-trash3"></i>
+            </div>
+          </div>
+        </article>
+        <!-- cart item 2 -->
+        <article class="cart-card">
+          <div class="cart-img">
+            <img src="./photos/cart img 2.jpg" alt="#" />
+          </div>
+          <div class="cart-content">
+            <h3 class="cart-img-title">Delim Jacket</h3>
+            <span class="cart-img-price">$10</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box"><i class="bi bi-dash"></i></span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box"><i class="bi bi-plus"></i></span>
+              </div>
+              <i class="bi bi-trash3"></i>
+            </div>
+          </div>
+        </article>
+        <!-- cart item 3 -->
+        <article class="cart-card">
+          <div class="cart-img">
+            <img src="./photos/cart img 3.jpeg" alt="#" />
+          </div>
+          <div class="cart-content">
+            <h3 class="cart-img-title">Ball Gown</h3>
+            <span class="cart-img-price">$15</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box"><i class="bi bi-dash"></i></span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box"><i class="bi bi-plus"></i></span>
+              </div>
+              <i class="bi bi-trash3"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="cart-item-prices">
+        <span class="cart-items">3 Items</span>
+        <span class="cart-item-total">$50</span>
+      </div>
+    </div>
+
+    <!-- =============== LOGIN SECTION ============ -->
+    <div class="login" id="login">
+      <i class="bi bi-x" id="login-close"></i>
+      <h2 class="login-title-center">Login</h2>
+
+      <form action="#">
+        <div class="login-content">
+          <label for="email" class="login-label">Email</label>
+          <input type="email" class="login-input" required />
+        </div>
+        <div class="login-content">
+          <label for="password" class="login-label">Password</label>
+          <input type="password" class="login-input" required />
+        </div>
+        <button class="login-btn">Sign In</button>
+        <p class="sign-up-text">
+          Not a member?
+          <a href="registration.html" class="sign-up-link">Sign Up</a>
+        </p>
+      </form>
+    </div>
+
+    <!--================= HERO SECTION ============== -->
     <section id="home">
       <div class="container swiper home-swiper mt-5">
         <div class="swiper-wrapper">
@@ -398,6 +486,10 @@
         © Godwin Onah, All rights reserved
       </p>
     </footer>
+    <!-- =========== Scroll up============ -->
+    <a href="#" class="scroll-up btn bg-danger text-white fs-5 fw-semibold"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
