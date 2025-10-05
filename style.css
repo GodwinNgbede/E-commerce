@@ -13,10 +13,11 @@ html {
 }
 
 /*============== nav-section styling =============== */
-nav {
+#nav-bar {
   top: 0;
   position: sticky;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 5;
 }
 .nav-link {
   position: relative;
@@ -49,7 +50,7 @@ nav {
   position: fixed;
   background: rgb(253, 253, 250);
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
-  z-index: 3;
+  z-index: 7;
   height: 100%;
   padding: 3.5rem 2.5rem;
   top: 0;
@@ -127,7 +128,7 @@ nav {
   position: fixed;
   background: rgb(253, 253, 250);
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
-  z-index: 3;
+  z-index: 7;
   height: 100%;
   padding: 3.5rem 2.5rem;
   top: 0;
@@ -358,7 +359,7 @@ footer a {
   opacity: 1;
 }
 
-.show-scroll {
+#scroll-up.show-scroll {
   bottom: 3rem;
 }
 
@@ -372,3 +373,47 @@ footer a {
   background: hsl(250, 12%, 80%);
   border-radius: 0.5rem;
 }
+
+/* ================================= SHOP PAGE STYLING =========================*/
+
+/* .row.first-row {
+} */
+.sidebar {
+  padding: 1.8rem;
+  background-color: rgb(253, 253, 248);
+  border-radius: 16px;
+}
+.filter-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.filter-div h4 {
+  display: flex;
+  justify-content: flex-start;
+}
+.filter {
+  display: flex;
+  text-align: center;
+}
+.filter p {
+  margin: 0;
+}
+.filter span {
+  display: flex;
+  justify-content: flex-end;
+}
+.filter input {
+  cursor: pointer;
+}
+/* .shop-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+.shop-items-grid img {
+  width: 125px;
+  height: 125x;
+} */

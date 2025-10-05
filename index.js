@@ -6,7 +6,7 @@ const cartIcon = document.getElementById("cart-icon");
 const cartEl = document.getElementById("cart");
 const cartClose = document.getElementById("cart-close");
 
-// ================T=O SHOW & HIDE LOGIN===================
+// ================ TO SHOW & HIDE LOGIN===================
 if (loginIcon) {
   loginIcon.addEventListener("click", () => {
     loginEl.classList.add("show-login");
@@ -30,16 +30,27 @@ if (cartEl) {
   });
 }
 
+// ===================== TO SHOW SCROLL UP ==============
+function scrollUp() {
+  const scrollEl = document.getElementById("scroll-up");
+  if (this.scrollY >= 350) {
+    scrollEl.classList.add("show-scroll");
+  } else {
+    scrollEl.classList.remove("show-scroll");
+  }
+}
+window.addEventListener("scroll", scrollUp);
+
 // To change background header
 function scrollHeader() {
-  const navEl = document.querySelector(".navbar-expand-sm");
+  const navEl = document.getElementById("nav-bar");
   if (this.scrollY > 50) {
     navEl.classList.add("scroll-header");
   } else {
     navEl.classList.remove("scroll-header");
   }
-  window.addEventListener("scroll", scrollHeader);
 }
+window.addEventListener("scroll", scrollHeader);
 
 // HOME SWIPER INITIALIZER FN
 var homeSwiper = new Swiper(".home-swiper", {

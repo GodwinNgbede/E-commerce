@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce website</title>
+    <!-- swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--================= nav section ==============-->
+    <nav class="navbar navbar-expand-sm" id="nav-bar">
+      <div class="container p-4">
+        <a class="navbar-brand fw-bold" href="#"
+          ><i class="bi bi-shop me-2"></i>Chez Ihotu</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse ms-5 fw-semibold"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Faq's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-icons" id="nav-icons">
+          <i class="bi bi-person fs-5 me-2" id="login-icon"></i>
+          <i class="bi bi-bag cart-icon fs-5" id="cart-icon"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================== CART SECTION============= -->
+    <div id="cart" class="cart">
+      <i class="bi bi-x" id="cart-close"></i>
+      <h2 class="cart-title-center">My cart</h2>
+      <div class="cart-container-content">
+        <!-- cart item 1 -->
+        <article class="cart-card">
+          <div class="cart-img">
+            <img src="./photos/cart img 1.jpeg" alt="#" />
+          </div>
+          <div class="cart-content">
+            <h3 class="cart-img-title">Wedding Gown</h3>
+            <span class="cart-img-price">$14</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box"><i class="bi bi-dash"></i></span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box"><i class="bi bi-plus"></i></span>
+              </div>
+              <i class="bi bi-trash3"></i>
+            </div>
+          </div>
+        </article>
+        <!-- cart item 2 -->
+        <article class="cart-card">
+          <div class="cart-img">
+            <img src="./photos/cart img 2.jpg" alt="#" />
+          </div>
+          <div class="cart-content">
+            <h3 class="cart-img-title">Delim Jacket</h3>
+            <span class="cart-img-price">$10</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box"><i class="bi bi-dash"></i></span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box"><i class="bi bi-plus"></i></span>
+              </div>
+              <i class="bi bi-trash3"></i>
+            </div>
+          </div>
+        </article>
+        <!-- cart item 3 -->
+        <article class="cart-card">
+          <div class="cart-img">
+            <img src="./photos/cart img 3.jpeg" alt="#" />
+          </div>
+          <div class="cart-content">
+            <h3 class="cart-img-title">Ball Gown</h3>
+            <span class="cart-img-price">$15</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box"><i class="bi bi-dash"></i></span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box"><i class="bi bi-plus"></i></span>
+              </div>
+              <i class="bi bi-trash3"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="cart-item-prices">
+        <span class="cart-items">3 Items</span>
+        <span class="cart-item-total">$50</span>
+      </div>
+    </div>
+
+    <!-- =============== LOGIN SECTION ============ -->
+    <div class="login" id="login">
+      <i class="bi bi-x" id="login-close"></i>
+      <h2 class="login-title-center">Login</h2>
+
+      <form action="#">
+        <div class="login-content">
+          <label for="email" class="login-label">Email</label>
+          <input type="email" class="login-input" required />
+        </div>
+        <div class="login-content">
+          <label for="password" class="login-label">Password</label>
+          <input type="password" class="login-input" required />
+        </div>
+        <button class="login-btn">Sign In</button>
+        <p class="sign-up-text">
+          Not a member?
+          <a href="registration.html" class="sign-up-link">Sign Up</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- =============== MAIN ================== -->
+    <main class="main-shop">
+      <section class="shop" id="shop">
+        <div class="container mt-5">
+          <div
+            class="shop-title d-flex flex-column justify-content-center text-center"
+          >
+            <h1>Shop Page</h1>
+            <h5>Home > <span class="text-secondary">Shop</span></h5>
+            <div class="row first-row">
+              <div class="col-12 col-md-4 sidebar">
+                <h3 class="shop-subtitle fs-4 d-flex justify-content-start">
+                  SELECT FILTERS
+                </h3>
+                <!-- =============== FILTER 1 ================-->
+                <div class="filter-div">
+                  <h4 class="fs-5">Condition</h4>
+                  <div class="filter">
+                    <input type="checkbox" name="new" id="new" />
+                    <p>New</p>
+                    <span class="text-secondary">(13)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="sale" id="sale" />
+                    <p>Sale</p>
+
+                    <span class="text-secondary">(13)</span>
+                  </div>
+                </div>
+                <!-- =============== FILTER 2 ================-->
+                <div class="filter-div">
+                  <h4 class="fs-5">Size</h4>
+                  <div class="filter">
+                    <input type="checkbox" name="s" id="s" />
+                    <p>S</p>
+                    <span class="text-secondary">(13)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="m" id="m" />
+                    <p>M</p>
+                    <span class="text-secondary">(15)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="l" id="l" />
+                    <p>L</p>
+                    <span class="text-secondary">(6)</span>
+                  </div>
+                </div>
+                <!-- =============== FILTER 3 ================-->
+                <div class="filter-div">
+                  <h4 class="fs-5">Categories</h4>
+                  <div class="filter">
+                    <input type="checkbox" name="men" id="men" />
+                    <p>Men</p>
+                    <span class="text-secondary">(2)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="women" id="women" />
+                    <p>Women</p>
+                    <span class="text-secondary">(4)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="kids" id="kids" />
+                    <p>Kids</p>
+                    <span class="text-secondary">(6)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="others" id="others" />
+                    <p>Others</p>
+                    <span class="text-secondary">(6)</span>
+                  </div>
+                </div>
+                <!-- =============== FILTER 4 ================-->
+                <div class="filter-div">
+                  <h4 class="fs-5">Styles</h4>
+                  <div class="filter">
+                    <input type="checkbox" name="casual" id="casual" />
+                    <p>Casual</p>
+                    <span class="text-secondary">(2)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="dressy" id="dressy" />
+                    <p>Dressy</p>
+                    <span class="text-secondary">(4)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="girly" id="girly" />
+                    <p>Girly</p>
+                    <span class="text-secondary">(6)</span>
+                  </div>
+                </div>
+                <!-- =============== FILTER 5 ================-->
+                <div class="filter-div">
+                  <h4 class="fs-5">Sub Categories</h4>
+                  <div class="filter">
+                    <input type="checkbox" name="jackets" id="jackets" />
+                    <p>Jackets</p>
+                    <span class="text-secondary">(2)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="T-shirts" id="T-shirts" />
+                    <p>T-shirts</p>
+                    <span class="text-secondary">(4)</span>
+                  </div>
+                  <div class="filter">
+                    <input
+                      type="checkbox"
+                      name="accessories"
+                      id="accessories"
+                    />
+                    <p>Accessories</p>
+                    <span class="text-secondary">(6)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="shoes" id="shoes" />
+                    <p>Shoes</p>
+                    <span class="text-secondary">(4)</span>
+                  </div>
+                  <div class="filter">
+                    <input type="checkbox" name="coats" id="coats" />
+                    <p>Coats</p>
+                    <span class="text-secondary">(6)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-8 shop-items grid">
+                <div class="row shop-items-grid">
+                  <div class="col-12 col-md-4 new-content">
+                    <!-- New Arrival Cart 1 -->
+
+                    <div class="new btn bg-danger text-white">New</div>
+                    <img src="./photos/new arrival photo 1.png" alt="#" />
+                    <h3>Ball Gown</h3>
+                    <p class="text-secondary">Accessory</p>
+                    <div class="price-div">
+                      <span class="new-price">$11.99</span>
+                      <span class="discount-price">$20.00</span>
+                    </div>
+                    <a href="details.html" class="btn bg-danger text-white">
+                      <i class="bi bi-cart"></i>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4 new-content">
+                    <!-- New Arrival Cart 1 -->
+
+                    <div class="new btn bg-danger text-white">New</div>
+                    <img src="./photos/new arrival photo 1.png" alt="#" />
+                    <h3>Ball Gown</h3>
+                    <p class="text-secondary">Accessory</p>
+                    <div class="price-div">
+                      <span class="new-price">$11.99</span>
+                      <span class="discount-price">$20.00</span>
+                    </div>
+                    <a href="details.html" class="btn bg-danger text-white">
+                      <i class="bi bi-cart"></i>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4 new-content">
+                    <!-- New Arrival Cart 1 -->
+
+                    <div class="new btn bg-danger text-white">New</div>
+                    <img src="./photos/new arrival photo 1.png" alt="#" />
+                    <h3>Ball Gown</h3>
+                    <p class="text-secondary">Accessory</p>
+                    <div class="price-div">
+                      <span class="new-price">$11.99</span>
+                      <span class="discount-price">$20.00</span>
+                    </div>
+                    <a href="details.html" class="btn bg-danger text-white">
+                      <i class="bi bi-cart"></i>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4 new-content">
+                    <!-- New Arrival Cart 1 -->
+
+                    <div class="new btn bg-danger text-white">New</div>
+                    <img src="./photos/new arrival photo 1.png" alt="#" />
+                    <h3>Ball Gown</h3>
+                    <p class="text-secondary">Accessory</p>
+                    <div class="price-div">
+                      <span class="new-price">$11.99</span>
+                      <span class="discount-price">$20.00</span>
+                    </div>
+                    <a href="details.html" class="btn bg-danger text-white">
+                      <i class="bi bi-cart"></i>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4 new-content">
+                    <!-- New Arrival Cart 1 -->
+
+                    <div class="new btn bg-danger text-white">New</div>
+                    <img src="./photos/new arrival photo 1.png" alt="#" />
+                    <h3>Ball Gown</h3>
+                    <p class="text-secondary">Accessory</p>
+                    <div class="price-div">
+                      <span class="new-price">$11.99</span>
+                      <span class="discount-price">$20.00</span>
+                    </div>
+                    <a href="details.html" class="btn bg-danger text-white">
+                      <i class="bi bi-cart"></i>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-4 new-content">
+                    <!-- New Arrival Cart 1 -->
+
+                    <div class="new btn bg-danger text-white">New</div>
+                    <img src="./photos/new arrival photo 1.png" alt="#" />
+                    <h3>Ball Gown</h3>
+                    <p class="text-secondary">Accessory</p>
+                    <div class="price-div">
+                      <span class="new-price">$11.99</span>
+                      <span class="discount-price">$20.00</span>
+                    </div>
+                    <a href="details.html" class="btn bg-danger text-white">
+                      <i class="bi bi-cart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========== footer section=============== -->
+    <footer class="py-3 my-4">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-md-3 footer-logo">
+            <a class="navbar-brand fw-bold" href="#"
+              ><i class="bi bi-shop me-2"></i>Chez Ihotu</a
+            >
+            <p class="text-secondary mt-3">
+              Enjoy the biggest sale <br />
+              of your life
+            </p>
+            <div class="footer-social-media mt-3">
+              <a class="fs-5 fw-bold text-dark me-2" href="www.facebook.com"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a class="fs-5 fw-bold text-dark me-2" href="www.twitter.com"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a class="fs-5 fw-bold text-dark" href="www.instagram.com"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 footer-about-container">
+            <div class="footer-about fw-bold fs-5 mb-3">About</div>
+            <a href="about.hmtl"><p class="text-secondary">About us</p></a>
+            <a href="customer.hmtl"
+              ><p class="text-secondary">Customer center</p></a
+            >
+            <a href="support.hmtl"
+              ><p class="text-secondary">Support center</p></a
+            >
+          </div>
+          <div class="col-12 col-md-3 footer-services-container">
+            <div class="footer-about fw-bold fs-5 mb-3">Our services</div>
+            <a href="#"><p class="text-secondary">Shop</p></a>
+            <a href="#"><p class="text-secondary">Discount</p></a>
+            <a href="#"><p class="text-secondary">Shipping mode</p></a>
+          </div>
+          <div class="col-12 col-md-3 footer-company-container">
+            <div class="footer-about fw-bold fs-5 mb-3">Our company</div>
+            <a href="#"><p class="text-secondary">About us</p></a>
+            <a href="#"><p class="text-secondary">Register</p></a>
+            <a href="#"><p class="text-secondary">Contact us</p></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-muted mt-5">
+        © Godwin Onah, All rights reserved
+      </p>
+    </footer>
+    <!-- =========== Scroll up============ -->
+    <a
+      href="#"
+      class="scroll-up btn bg-danger text-white fs-5 fw-semibold"
+      id="scroll-up"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
