@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <!-- Boxicon CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -163,218 +168,230 @@
           >
             <h1>Shop Page</h1>
             <h5>Home > <span class="text-secondary">Shop</span></h5>
-            <div class="row first-row">
-              <div class="col-12 col-md-4 sidebar">
-                <h3 class="shop-subtitle fs-4 d-flex justify-content-start">
-                  SELECT FILTERS
-                </h3>
-                <!-- =============== FILTER 1 ================-->
-                <div class="filter-div">
-                  <h4 class="fs-5">Condition</h4>
-                  <div class="filter">
-                    <input type="checkbox" name="new" id="new" />
-                    <p>New</p>
-                    <span class="text-secondary">(13)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="sale" id="sale" />
-                    <p>Sale</p>
+            <div class="row shop-row">
+              <div class="col-12 col-md-10 mx-auto">
+                <div class="row shop-row-grid">
+                  <div class="col-12 col-md-4 sidebar">
+                    <h3 class="shop-subtitle fs-4 d-flex justify-content-start">
+                      SELECT FILTERS
+                    </h3>
+                    <!-- =============== FILTER 1 ================-->
+                    <div class="filter-div">
+                      <h4 class="fs-5">Condition</h4>
+                      <div class="filter">
+                        <input type="checkbox" name="new" id="new" />
+                        <p>New</p>
+                        <span class="text-secondary">(13)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="sale" id="sale" />
+                        <p>Sale</p>
 
-                    <span class="text-secondary">(13)</span>
-                  </div>
-                </div>
-                <!-- =============== FILTER 2 ================-->
-                <div class="filter-div">
-                  <h4 class="fs-5">Size</h4>
-                  <div class="filter">
-                    <input type="checkbox" name="s" id="s" />
-                    <p>S</p>
-                    <span class="text-secondary">(13)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="m" id="m" />
-                    <p>M</p>
-                    <span class="text-secondary">(15)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="l" id="l" />
-                    <p>L</p>
-                    <span class="text-secondary">(6)</span>
-                  </div>
-                </div>
-                <!-- =============== FILTER 3 ================-->
-                <div class="filter-div">
-                  <h4 class="fs-5">Categories</h4>
-                  <div class="filter">
-                    <input type="checkbox" name="men" id="men" />
-                    <p>Men</p>
-                    <span class="text-secondary">(2)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="women" id="women" />
-                    <p>Women</p>
-                    <span class="text-secondary">(4)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="kids" id="kids" />
-                    <p>Kids</p>
-                    <span class="text-secondary">(6)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="others" id="others" />
-                    <p>Others</p>
-                    <span class="text-secondary">(6)</span>
-                  </div>
-                </div>
-                <!-- =============== FILTER 4 ================-->
-                <div class="filter-div">
-                  <h4 class="fs-5">Styles</h4>
-                  <div class="filter">
-                    <input type="checkbox" name="casual" id="casual" />
-                    <p>Casual</p>
-                    <span class="text-secondary">(2)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="dressy" id="dressy" />
-                    <p>Dressy</p>
-                    <span class="text-secondary">(4)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="girly" id="girly" />
-                    <p>Girly</p>
-                    <span class="text-secondary">(6)</span>
-                  </div>
-                </div>
-                <!-- =============== FILTER 5 ================-->
-                <div class="filter-div">
-                  <h4 class="fs-5">Sub Categories</h4>
-                  <div class="filter">
-                    <input type="checkbox" name="jackets" id="jackets" />
-                    <p>Jackets</p>
-                    <span class="text-secondary">(2)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="T-shirts" id="T-shirts" />
-                    <p>T-shirts</p>
-                    <span class="text-secondary">(4)</span>
-                  </div>
-                  <div class="filter">
-                    <input
-                      type="checkbox"
-                      name="accessories"
-                      id="accessories"
-                    />
-                    <p>Accessories</p>
-                    <span class="text-secondary">(6)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="shoes" id="shoes" />
-                    <p>Shoes</p>
-                    <span class="text-secondary">(4)</span>
-                  </div>
-                  <div class="filter">
-                    <input type="checkbox" name="coats" id="coats" />
-                    <p>Coats</p>
-                    <span class="text-secondary">(6)</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-8 shop-items grid">
-                <div class="row shop-items-grid">
-                  <div class="col-12 col-md-4 new-content">
-                    <!-- New Arrival Cart 1 -->
-
-                    <div class="new btn bg-danger text-white">New</div>
-                    <img src="./photos/new arrival photo 1.png" alt="#" />
-                    <h3>Ball Gown</h3>
-                    <p class="text-secondary">Accessory</p>
-                    <div class="price-div">
-                      <span class="new-price">$11.99</span>
-                      <span class="discount-price">$20.00</span>
+                        <span class="text-secondary">(13)</span>
+                      </div>
                     </div>
-                    <a href="details.html" class="btn bg-danger text-white">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-4 new-content">
-                    <!-- New Arrival Cart 1 -->
-
-                    <div class="new btn bg-danger text-white">New</div>
-                    <img src="./photos/new arrival photo 1.png" alt="#" />
-                    <h3>Ball Gown</h3>
-                    <p class="text-secondary">Accessory</p>
-                    <div class="price-div">
-                      <span class="new-price">$11.99</span>
-                      <span class="discount-price">$20.00</span>
+                    <!-- =============== FILTER 2 ================-->
+                    <div class="filter-div">
+                      <h4 class="fs-5">Size</h4>
+                      <div class="filter">
+                        <input type="checkbox" name="s" id="s" />
+                        <p>S</p>
+                        <span class="text-secondary">(13)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="m" id="m" />
+                        <p>M</p>
+                        <span class="text-secondary">(15)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="l" id="l" />
+                        <p>L</p>
+                        <span class="text-secondary">(6)</span>
+                      </div>
                     </div>
-                    <a href="details.html" class="btn bg-danger text-white">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-4 new-content">
-                    <!-- New Arrival Cart 1 -->
-
-                    <div class="new btn bg-danger text-white">New</div>
-                    <img src="./photos/new arrival photo 1.png" alt="#" />
-                    <h3>Ball Gown</h3>
-                    <p class="text-secondary">Accessory</p>
-                    <div class="price-div">
-                      <span class="new-price">$11.99</span>
-                      <span class="discount-price">$20.00</span>
+                    <!-- =============== FILTER 3 ================-->
+                    <div class="filter-div">
+                      <h4 class="fs-5">Categories</h4>
+                      <div class="filter">
+                        <input type="checkbox" name="men" id="men" />
+                        <p>Men</p>
+                        <span class="text-secondary">(2)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="women" id="women" />
+                        <p>Women</p>
+                        <span class="text-secondary">(4)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="kids" id="kids" />
+                        <p>Kids</p>
+                        <span class="text-secondary">(6)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="others" id="others" />
+                        <p>Others</p>
+                        <span class="text-secondary">(6)</span>
+                      </div>
                     </div>
-                    <a href="details.html" class="btn bg-danger text-white">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-4 new-content">
-                    <!-- New Arrival Cart 1 -->
-
-                    <div class="new btn bg-danger text-white">New</div>
-                    <img src="./photos/new arrival photo 1.png" alt="#" />
-                    <h3>Ball Gown</h3>
-                    <p class="text-secondary">Accessory</p>
-                    <div class="price-div">
-                      <span class="new-price">$11.99</span>
-                      <span class="discount-price">$20.00</span>
+                    <!-- =============== FILTER 4 ================-->
+                    <div class="filter-div">
+                      <h4 class="fs-5">Styles</h4>
+                      <div class="filter">
+                        <input type="checkbox" name="casual" id="casual" />
+                        <p>Casual</p>
+                        <span class="text-secondary">(2)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="dressy" id="dressy" />
+                        <p>Dressy</p>
+                        <span class="text-secondary">(4)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="girly" id="girly" />
+                        <p>Girly</p>
+                        <span class="text-secondary">(6)</span>
+                      </div>
                     </div>
-                    <a href="details.html" class="btn bg-danger text-white">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-4 new-content">
-                    <!-- New Arrival Cart 1 -->
-
-                    <div class="new btn bg-danger text-white">New</div>
-                    <img src="./photos/new arrival photo 1.png" alt="#" />
-                    <h3>Ball Gown</h3>
-                    <p class="text-secondary">Accessory</p>
-                    <div class="price-div">
-                      <span class="new-price">$11.99</span>
-                      <span class="discount-price">$20.00</span>
+                    <!-- =============== FILTER 5 ================-->
+                    <div class="filter-div">
+                      <h4 class="fs-5">Sub Categories</h4>
+                      <div class="filter">
+                        <input type="checkbox" name="jackets" id="jackets" />
+                        <p>Jackets</p>
+                        <span class="text-secondary">(2)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="T-shirts" id="T-shirts" />
+                        <p>T-shirts</p>
+                        <span class="text-secondary">(4)</span>
+                      </div>
+                      <div class="filter">
+                        <input
+                          type="checkbox"
+                          name="accessories"
+                          id="accessories"
+                        />
+                        <p>Accessories</p>
+                        <span class="text-secondary">(6)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="shoes" id="shoes" />
+                        <p>Shoes</p>
+                        <span class="text-secondary">(4)</span>
+                      </div>
+                      <div class="filter">
+                        <input type="checkbox" name="coats" id="coats" />
+                        <p>Coats</p>
+                        <span class="text-secondary">(6)</span>
+                      </div>
                     </div>
-                    <a href="details.html" class="btn bg-danger text-white">
-                      <i class="bi bi-cart"></i>
-                    </a>
                   </div>
-                  <div class="col-12 col-md-4 new-content">
-                    <!-- New Arrival Cart 1 -->
+                  <div class="col-12 col-md-8 shop-items grid">
+                    <div class="row gx-4 gy-4 shop-items-grid">
+                      <div class="col-12 col-md-4 new-content">
+                        <!-- shop cart 1 -->
 
-                    <div class="new btn bg-danger text-white">New</div>
-                    <img src="./photos/new arrival photo 1.png" alt="#" />
-                    <h3>Ball Gown</h3>
-                    <p class="text-secondary">Accessory</p>
-                    <div class="price-div">
-                      <span class="new-price">$11.99</span>
-                      <span class="discount-price">$20.00</span>
+                        <div class="new btn bg-danger text-white">New</div>
+                        <img src="./photos/shop 1.jpeg" alt="#" />
+                        <h3>Raglan Sleeves</h3>
+                        <p class="text-secondary">Accessory</p>
+                        <div class="price-div">
+                          <span class="new-price">$5.99</span>
+                          <span class="discount-price">$10.00</span>
+                        </div>
+                        <a href="details.html" class="btn bg-danger text-white">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-4 new-content">
+                        <!-- Shop Cart 2 -->
+
+                        <div class="new btn bg-danger text-white">New</div>
+                        <img src="./photos/shop 2.jpeg" alt="#" />
+                        <h3>T-shirt</h3>
+                        <p class="text-secondary">Accessory</p>
+                        <div class="price-div">
+                          <span class="new-price">$5.99</span>
+                          <span class="discount-price">$12.00</span>
+                        </div>
+                        <a href="details.html" class="btn bg-danger text-white">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-4 new-content">
+                        <!-- Shp Cart 3 -->
+
+                        <div class="new btn bg-danger text-white">New</div>
+                        <img src="./photos/shop 3.jpeg" alt="#" />
+                        <h3>Jean Jacket</h3>
+                        <p class="text-secondary">Accessory</p>
+                        <div class="price-div">
+                          <span class="new-price">$17.50</span>
+                          <span class="discount-price">$23.00</span>
+                        </div>
+                        <a href="details.html" class="btn bg-danger text-white">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-4 new-content">
+                        <!-- Shop Cart 4 -->
+
+                        <div class="new btn bg-danger text-white">New</div>
+                        <img src="./photos/shop 4.jpeg" alt="#" />
+                        <h3>Hermes Bag</h3>
+                        <p class="text-secondary">Accessory</p>
+                        <div class="price-div">
+                          <span class="new-price">$50.00</span>
+                          <span class="discount-price">$65.00</span>
+                        </div>
+                        <a href="details.html" class="btn bg-danger text-white">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-4 new-content">
+                        <!-- Shop Cart 5 -->
+
+                        <div class="new btn bg-danger text-white">New</div>
+                        <img src="./photos/shop 5.jpeg" alt="#" />
+                        <h3>Nike Hoodie</h3>
+                        <p class="text-secondary">Accessory</p>
+                        <div class="price-div">
+                          <span class="new-price">$30.00</span>
+                          <span class="discount-price">$35.00</span>
+                        </div>
+                        <a href="details.html" class="btn bg-danger text-white">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-4 new-content">
+                        <!-- Shop Cart 6 -->
+
+                        <div class="new btn bg-danger text-white">New</div>
+                        <img src="./photos/shop 6.jpeg" alt="#" />
+                        <h3>Mens Suit</h3>
+                        <p class="text-secondary">Accessory</p>
+                        <div class="price-div">
+                          <span class="new-price">$80.50</span>
+                          <span class="discount-price">$100.00</span>
+                        </div>
+                        <a href="details.html" class="btn bg-danger text-white">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
                     </div>
-                    <a href="details.html" class="btn bg-danger text-white">
-                      <i class="bi bi-cart"></i>
-                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row"></div>
+            <div class="shop-pagination fs-5 fw-semibold">
+              <i class="bi bi-arrow-left-short"></i>
+              <span class="current-page">1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>&middot; &middot; &middot;</span>
+              <span>9</span>
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
           </div>
         </div>
       </section>
